@@ -1,0 +1,38 @@
+# Site settings
+title: The Life Style | A blog about Life and around
+url: https://thelifestyle.github.io
+author: Kiran
+email: mail2kirangp@gmail.com
+url: "https://thelifestyle.github.io"
+
+# Build settings
+encoding: UTF-8
+excerpt_separator: <!--more-->
+baseurl: /
+markdown: kramdown
+source: .
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
